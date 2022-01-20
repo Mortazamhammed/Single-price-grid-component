@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Poppins:wght@200;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Karla', sans-serif;
+    font-size: 16px;
+    background-color: #E6EFF6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+  
+}
+.contianer{
+    margin: 0 auto;
+    max-width:960px;
+}
+.card{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-areas: "x x" "y z";
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 2rem 1rem;
+  
+  
+}
+.card div{
+    padding: 40px;
+}
+.top{
+    grid-area: x;
+    background-color: #fff;
+}
+.top h1{
+    font-size: 26px;
+    padding-bottom: 20px;
+    color: hsl(179, 62%, 43%);
+}
+.top h3{
+    color:hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+.top p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+
+h2{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h4 span.price{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+h4 span{
+    color:hsl(204, 43%, 93%);
+    font-weight: 400;
+    padding-left: 10px;
+}
+h4{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.left{
+    grid-area: y;
+    background-color: hsl(179, 62%, 43%);
+}
+.left p{
+    color: #fff;
+}
+.left a{
+    display: block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 30px;
+
+}
+.right{
+    grid-area: z;
+    background-color: hsl(179, 62%, 50%);
+}
+.right ul{
+    list-style: none;
+}
+li{
+    color: #fff;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+@media(max-width:425px){
+    .card{
+        grid-template-columns: 100%;
+        grid-template-areas: "x" "y" "z";
+        
+    }
+    .card div{
+        padding: 30px;
+    }
+}
